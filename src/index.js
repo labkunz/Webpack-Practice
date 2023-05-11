@@ -1,5 +1,7 @@
 // ./demos/simple-app/public/index.js
-const demoName = "Simple App";
+import _ from "lodash";
+
+const demoName = "Zero Config";
 
 function component() {
   const element = document.createElement("div");
