@@ -1,7 +1,17 @@
 // ./demos/simple-app/public/index.js
 import _ from "lodash";
 
-const demoName = "Zero Config";
+import WebpackLogo from "file-loader!./webpack-logo.png";
+
+const demoName = "Load Image";
+
+function logo(url) {
+  const element = new Image();
+
+  element.src = url;
+
+  return element;
+}
 
 function component() {
   const element = document.createElement("div");
@@ -11,4 +21,5 @@ function component() {
   return element;
 }
 
+document.body.appendChild(logo(WebpackLogo));
 document.body.appendChild(component());

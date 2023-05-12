@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server ./dist",
-    "bulid": "webpack"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "http-server": "^14.1.1",
     "lodash": "^4.17.21",
     "webpack": "^5.82.1",
